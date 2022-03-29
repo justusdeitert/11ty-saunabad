@@ -23,6 +23,7 @@ module.exports = {
 			// Custom Colors
 			acapulco: customColors.acapulco,
 			gray: customColors.gray,
+			marigold: customColors.marigold,
 		},
 	},
 	plugins: [],
