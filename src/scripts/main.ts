@@ -1,5 +1,3 @@
-console.log("lol");
-
 // File: main.js
 // Import Highway
 import Highway from "@dogstudio/highway";
@@ -15,7 +13,7 @@ class Fade extends Highway.Transition {
 
 		// Animation
 		const main: HTMLElement = to.querySelector("main");
-		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("lsol");
+		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("section");
 
 		// Staggering animation via setTimeout
 		sections.forEach((section, index) => {
