@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-// html {
-//     background-color: blue;
-// }
+html {
+    color: theme('colors.dark.500');
+}
 
 .transition-fade {
   transition: 0.1s ease-in-out;

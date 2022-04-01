@@ -20,7 +20,7 @@ module.exports = {
 			// indigo: colors.indigo,
 			// red: colors.rose,
 			// yellow: colors.amber,
-			
+
 			blue: customColors.blue,
 			yellow: customColors.yellow,
 			sienna: customColors.sienna,
@@ -28,7 +28,11 @@ module.exports = {
 			shilo: customColors.shilo,
 			lila: customColors.lila,
 			dark: customColors.dark,
-
+		},
+		fontFamily: {
+			sans: ["Mukta", "ui-sans-serif", "system-ui"],
+			serif: ["Rosario", "ui-serif", "Georgia"],
+			display: ["Limelight", "Oswald"],
 		},
 	},
 	plugins: [],
