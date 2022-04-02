@@ -13,7 +13,7 @@ class Fade extends Highway.Transition {
 
 		// Animation
 		const main: HTMLElement = to.querySelector("main");
-		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("section");
+		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("section, footer, header");
 
 		// Staggering animation via setTimeout
 		sections.forEach((section, index) => {
