@@ -3,47 +3,63 @@
 @tailwind utilities;
 
 html {
-    color: theme('colors.dark.500');
+	color: theme("colors.dark.500");
 }
 
 .transition-fade {
-  transition: 0.1s ease-in-out;
-  opacity: 1;
+	transition: 0.1s ease-in-out;
+	opacity: 1;
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+	opacity: 0;
 }
 
 @keyframes coming {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 .coming {
-  animation: coming .4s forwards cubic-bezier(.25,1,.5,1);
-  // animation-delay: .15s;
+	animation: coming 0.4s forwards cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @keyframes going {
-  from {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(30px);
-  }
+	from {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(30px);
+	}
 }
-
 
 .going {
-  animation: going .4s forwards cubic-bezier(.25,1,.5,1);
-  animation-delay: .15s;
+	animation: going 0.4s forwards cubic-bezier(0.25, 1, 0.5, 1);
+	animation-delay: 0.15s;
 }
+
+// .fluid-min-height {
+//   $min-value: var(--min-height-mobile);
+//   $max-value: var(--min-height-desktop);
+//   $min-max-value: var(--min-height-difference);
+//   $min-vw: map-get($grid-breakpoints, xs);
+//   $max-vw: map-get($grid-breakpoints, xl);
+
+//   min-height: #{$min-value};
+
+//   @media screen and (min-width: $min-vw) {
+//       min-height: calc(#{$min-value} + #{$min-max-value} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//   }
+
+//   @media screen and (min-width: $max-vw) {
+//       min-height: #{$max-value};
+//   }
+// }
