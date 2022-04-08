@@ -63,3 +63,33 @@ html.is-animating .transition-fade {
 //       min-height: #{$max-value};
 //   }
 // }
+
+// .fluid-text {
+// 	--fluid-text-min: 3rem;
+// 	--fluid-text-max: 62rem;
+// 	--scaler: 10vw;
+
+//     $min-value: var(--fluid-text-min);
+//     $max-value: var(--fluid-text-max);
+//     $min-max-value: var(--fluid-text-desktop-mobile);
+	
+//     $min-vw: 480px;
+//     $max-vw: 976px;
+
+//     font-size: #{$min-value};
+
+//     @media screen and (min-width: $min-vw) {
+//         font-size: calc(#{$min-value} + #{$min-max-value} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//     }
+
+//     @media screen and (min-width: $max-vw) {
+//         font-size: #{$max-value};
+//     }
+// }
+
+// .fluid-text {
+// 	--minFontSize: 3rem;
+// 	--maxFontSize: 62rem;
+// 	--scaler: 10vw;
+// 	font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+// }
