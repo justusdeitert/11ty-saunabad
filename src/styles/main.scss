@@ -46,50 +46,6 @@ html.is-animating .transition-fade {
 	animation-delay: 0.15s;
 }
 
-// .fluid-min-height {
-//   $min-value: var(--min-height-mobile);
-//   $max-value: var(--min-height-desktop);
-//   $min-max-value: var(--min-height-difference);
-//   $min-vw: map-get($grid-breakpoints, xs);
-//   $max-vw: map-get($grid-breakpoints, xl);
-
-//   min-height: #{$min-value};
-
-//   @media screen and (min-width: $min-vw) {
-//       min-height: calc(#{$min-value} + #{$min-max-value} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-//   }
-
-//   @media screen and (min-width: $max-vw) {
-//       min-height: #{$max-value};
-//   }
-// }
-
-// .fluid-text {
-// 	--fluid-text-min: 3rem;
-// 	--fluid-text-max: 62rem;
-// 	--scaler: 10vw;
-
-//     $min-value: var(--fluid-text-min);
-//     $max-value: var(--fluid-text-max);
-//     $min-max-value: var(--fluid-text-desktop-mobile);
-	
-//     $min-vw: 480px;
-//     $max-vw: 976px;
-
-//     font-size: #{$min-value};
-
-//     @media screen and (min-width: $min-vw) {
-//         font-size: calc(#{$min-value} + #{$min-max-value} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-//     }
-
-//     @media screen and (min-width: $max-vw) {
-//         font-size: #{$max-value};
-//     }
-// }
-
-// .fluid-text {
-// 	--minFontSize: 3rem;
-// 	--maxFontSize: 62rem;
-// 	--scaler: 10vw;
-// 	font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
-// }
+.fluid-text {
+	font-size: clamp(var(--min-font, 22px), var(--scaler, 14vw), var(--max-font, 23px));
+}
