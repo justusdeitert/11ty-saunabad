@@ -32,7 +32,7 @@ html.is-animating .transition-fade {
 
 @keyframes going {
 	from {
-		opacity: 1;
+		// opacity: 1;
 		transform: translateY(0px);
 	}
 	to {
@@ -46,6 +46,10 @@ html.is-animating .transition-fade {
 	animation-delay: 0.15s;
 }
 
+.fluid-heading {
+	font-size: clamp(var(--min-font, 22px), var(--scaler, 12vw), var(--max-font, 32px));
+}
+
 .fluid-text {
-	font-size: clamp(var(--min-font, 22px), var(--scaler, 14vw), var(--max-font, 23px));
+	font-size: clamp(var(--min-font, 18px), var(--scaler, 6vw), var(--max-font, 22px));
 }
