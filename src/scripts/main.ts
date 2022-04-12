@@ -51,3 +51,13 @@ const H = new Highway.Core({
 // import Alpine from 'alpinejs';
 // window.Alpine = Alpine;
 // Alpine.start();
+
+/**
+ * Import Swiper
+ */
+  // import Swiper JS
+import Swiper from 'swiper';
+
+const swiper = new Swiper('.swiper', {
+	slidesPerView: 2,
+})
