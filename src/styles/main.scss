@@ -1,13 +1,24 @@
-// Imports
-@import "./swiper.scss";
-
 // Tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// Imports
+@import "./swiper";
+@import "./mixins/fluid-text";
+
 html {
 	color: theme("colors.dark.500");
+}
+
+p, a, ul, span, table {
+	@extend .text-base;
+	font-weight: 300;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	@extend .text-base;
 }
 
 .transition-fade {
@@ -50,10 +61,63 @@ html.is-animating .transition-fade {
 	animation-delay: 0.15s;
 }
 
-.fluid-heading {
-	font-size: clamp(var(--min-font, 22px), var(--scaler, 12vw), var(--max-font, 32px));
-}
+.text {
 
-.fluid-text {
-	font-size: clamp(var(--min-font, 18px), var(--scaler, 6vw), var(--max-font, 22px));
+	// text-xs 
+
+	// &-xs {
+	// 	@include fluid-type(0.75rem, 1.75rem);
+	// 	line-height: 1.2;
+	// }
+
+	&-xs {
+		@include fluid-type(0.875rem, 1.875rem);
+		line-height: 1.2;
+	}
+
+	&-sm {
+		@include fluid-type(1rem, 2rem);
+		line-height: 1.4;
+	}
+
+	&-base {
+		@include fluid-type(1.125rem, 2.125rem);
+		line-height: 1.2;
+	}
+
+	&-lg {
+		@include fluid-type(1.25rem, 2.25rem);
+		line-height: 1.2;
+	}
+
+	&-xl {
+		@include fluid-type(1.5rem, 2.5rem);
+		line-height: 1.2;
+	}
+
+	&-2xl {
+		@include fluid-type(1.875rem, 2.875rem);
+		line-height: 1.2;
+	}
+
+	&-3xl {
+		@include fluid-type(2.25rem, 3.25rem);
+		line-height: 1;
+	}
+
+	&-5xl {
+		@include fluid-type(3rem, 4rem);
+		line-height: 1;
+	}
+
+	&-hero-heading {
+		@include fluid-type(3rem, 15rem);
+		line-height: 1;
+	}
+
+	&-hero-subheading {
+		@include fluid-type(1.75rem, 2.5rem);
+		line-height: 1;
+	}
+
 }

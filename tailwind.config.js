@@ -9,7 +9,7 @@ module.exports = {
 			sm: "480px",
 			md: "768px",
 			lg: "976px",
-			xl: "1680px",
+			xl: "1920px"
 		},
 		colors: {
 			transparent: "transparent",
@@ -20,7 +20,6 @@ module.exports = {
 			// indigo: colors.indigo,
 			// red: colors.rose,
 			// yellow: colors.amber,
-
 			blue: customColors.blue,
 			yellow: customColors.yellow,
 			sienna: customColors.sienna,
@@ -34,6 +33,7 @@ module.exports = {
 			serif: ["Rosario", "ui-serif", "Georgia"],
 			display: ["Limelight", "Oswald"],
 		},
+		fontSize: {}
 	},
 	plugins: [],
 };
