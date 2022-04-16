@@ -8,7 +8,8 @@ async function imageShortcode(src, alt, sizes, classes) {
     let metadata = await Image(src, {
         widths: [300, 600],
         formats: ["avif", "jpeg"],
-        outputDir: "./dist/img/",
+        urlPath: "/images/",
+        outputDir: "./dist/images/",
     });
 
     let imageAttributes = {

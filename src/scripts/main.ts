@@ -2,6 +2,9 @@
 // Import Highway
 import Highway from "@dogstudio/highway";
 
+// Tailwinf config file
+import Tailwind from "../../tailwind.config";
+
 // Fade
 class Fade extends Highway.Transition {
 	in({ from, to, done }) {
@@ -59,5 +62,17 @@ const H = new Highway.Core({
 import Swiper from 'swiper';
 
 const swiper = new Swiper('.swiper', {
-	slidesPerView: 2,
+	slidesPerView: 1.5,
+	spaceBetween: 40,
+	breakpoints: {
+		// 768: {
+		// 	slidesPerView: 2.5,
+		// 	spaceBetween: 0,
+		// },
+		976: {
+			slidesPerView: 2.5,
+			spaceBetween: 80,
+		}
+
+	}
 })

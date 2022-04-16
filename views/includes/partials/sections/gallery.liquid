@@ -1,22 +1,28 @@
-<section id="gallery" class="bg-green h-96 p-8 sm:p-16 lg:p -24">
-    
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper flex gap-20">
-            <!-- Slides -->
-            <div class="swiper-slide bg-shilo ">Slide 1</div>
-            <div class="swiper-slide bg-shilo">Slide 2</div>
-            <div class="swiper-slide bg-shilo">Slide 3</div>
+<section id="gallery" class="bg-green overflow-hidden">
+    <div class="mx-auto max-w-screen-xl p-8 px-8 sm:px-16 md:px-24 sm:py-20 lg:py-36">
+        <div class="swiper !overflow-visible cursor-grab">
+            <div class="swiper-wrapper flex">
+                <div class="aspect-[5/6] swiper-slide bg-shilo mr-[40px] lg:mr-[80px] px-6 md:px-12">
+                    <h3 class="text-3xl text-center font-bold italic translate -translate-y-2/4 uppercase">Saunagarten</h3>
+                    {% image "./src/images/saungarten.jpg", "Unser Saunagarten", "(min-width: 30em) 50vw, 100vw" "aspect-square object-cover" %}
+                    <p class="text-center my-8 mx-6">Finden Sie Entspannung in <br> unserem Saunagarten</p>
+                </div>
+                <div class="aspect-[5/6] swiper-slide bg-shilo mr-[40px] lg:mr-[80px] px-6 md:px-12">
+                    <h3 class="text-3xl text-center font-bold italic translate -translate-y-2/4 uppercase">Ruheraum</h3>
+                    {% image "./src/images/ruheraum.jpg", "Unser Ruheraum", "(min-width: 30em) 50vw, 100vw" "aspect-square object-cover" %}
+                    <p class="text-center my-8 mx-6">Das Saunabad befindet sich in der Rykestraße in Prenzlauer Berg</p>
+                </div>
+                <div class="aspect-[5/6] swiper-slide bg-shilo mr-[40px] lg:mr-[80px] px-6 md:px-12">
+                    <h3 class="text-3xl text-center font-bold italic translate -translate-y-2/4 uppercase">Rykestraße</h3>
+                    {% image "./src/images/rykestraße.jpg", "Die Rykestraße", "(min-width: 30em) 50vw, 100vw" "aspect-square object-cover" %}
+                    <p class="text-center my-8 mx-6">Das Saunabad befindet sich in der Rykestraße in Prenzlauer Berg</p>
+                </div>
+                <div class="aspect-[5/6] swiper-slide bg-shilo mr-[40px] lg:mr-[80px] px-6 md:px-12">
+                    <h3 class="text-3xl text-center font-bold italic translate -translate-y-2/4 uppercase">Rykestraße</h3>
+                    {% image "./src/images/rykestraße.jpg", "Die Rykestraße", "(min-width: 30em) 50vw, 100vw" "aspect-square object-cover" %}
+                    <p class="text-center my-8 mx-6">Das Saunabad befindet sich in der Rykestraße in Prenzlauer Berg</p>
+                </div>
+            </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
 </section>
