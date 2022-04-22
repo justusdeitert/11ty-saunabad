@@ -112,5 +112,10 @@ html.is-animating .transition-fade {
 		@include fluid-type(1.75rem, 2.5rem);
 		line-height: 1;
 	}
+	
+	&-section-heading {
+		@include fluid-type(3rem, 10rem);
+		line-height: 1;
+	}
 
 }

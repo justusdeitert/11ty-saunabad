@@ -62,15 +62,15 @@ const H = new Highway.Core({
 import Swiper from 'swiper';
 
 const swiper = new Swiper('.swiper', {
-	slidesPerView: 1.5,
+	slidesPerView: 1.2,
 	spaceBetween: 40,
 	breakpoints: {
-		// 768: {
-		// 	slidesPerView: 2.5,
-		// 	spaceBetween: 0,
-		// },
+		480: {
+			slidesPerView: 1.5,
+			spaceBetween: 40,
+		},
 		976: {
-			slidesPerView: 2.5,
+			slidesPerView: 2.3,
 			spaceBetween: 80,
 		}
 
