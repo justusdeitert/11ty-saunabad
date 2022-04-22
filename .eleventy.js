@@ -53,6 +53,7 @@ module.exports = function (eleventyConfig) {
 			output: "dist",
 			layouts: "layouts",
 			includes: "includes",
+            data: "data"
 		},
 	};
 };

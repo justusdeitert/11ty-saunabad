@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Saunagarten",
+        "description": "Finden Sie Entspannung in unserem Saunagarten",
+        "image": "./src/images/saungarten.jpg"
+    },
+    {
+        "title": "Ruheraum",
+        "description": "Entspannen Sie sich in unserem Ruheraum",
+        "image": "./src/images/ruheraum.jpg"
+    },
+    {
+        "title": "Rykestraße",
+        "description": "Finden Sie Entspannung in unserem Saunagarten",
+        "image": "./src/images/rykestraße.jpg"
+    },
+    {
+        "title": "Rykestraße",
+        "description": "Finden Sie Entspannung in unserem Saunagarten",
+        "image": "./src/images/rykestraße.jpg"
+    }
+]
