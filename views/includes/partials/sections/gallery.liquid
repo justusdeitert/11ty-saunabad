@@ -1,14 +1,14 @@
 <section id="gallery" class="bg-green overflow-hidden">
-    <div class="mx-auto max-w-screen-xl px-6 md:px-[4vw] py-20 md:py-[8vw]">
+    <div class="mx-auto max-w-screen-xl px-6 md:px-[4vw] xl:px-16 py-20 md:py-[8vw] xl:py-36">
         <div class="swiper !overflow-visible cursor-grab">
             <div class="swiper-wrapper flex">
                 {% for slide in gallery %}
-                    <div class="swiper-slide bg-shilo mr-[30px] lg:mr-[70px] p-4 md:p-[2.5vw] xl:p-12">
+                    <div class="swiper-slide flex flex-col bg-shilo mr-[30px] lg:mr-[70px] p-4 md:p-[2.5vw] xl:p-12">
                         <h3 class="absolute text-3xl w-full left-0 top-0 -translate-y-2/4 text-center font-bold italic uppercase">
                             {{ slide.title }}
                         </h3>
                         {% image slide.image, slide.title, "(min-width: 30em) 50vw, 100vw" "aspect-square object-cover w-full mt-4" %}
-                        <p class="text-center text-md mt-8 mx-auto max-w-[80%]">{{ slide.description }}</p>
+                        <p class="text-center text-md pt-8 my-auto mx-auto max-w-[80%]">{{ slide.description }}</p>
                     </div>
                 {%- endfor %}
             </div>

@@ -11,12 +11,12 @@
     },
     {
         "title": "Rykestraße",
-        "description": "Finden Sie Entspannung in unserem Saunagarten",
+        "description": "Im Herzen von Prenzlauer Berg",
         "image": "./src/images/rykestraße.jpg"
     },
     {
-        "title": "Rykestraße",
-        "description": "Finden Sie Entspannung in unserem Saunagarten",
-        "image": "./src/images/rykestraße.jpg"
+        "title": "Bar",
+        "description": "Genießen Sie ein paar leckere Getränke an unserer Bar",
+        "image": "./src/images/bar.jpg"
     }
 ]

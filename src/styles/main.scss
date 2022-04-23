@@ -64,67 +64,67 @@ html.is-animating .transition-fade {
 .text {
 
 	&-xs {
-		@include fluid-type(0.75rem, 1.75rem);
+		@include fluid-type(0.75rem, 1.5rem);
 		line-height: 1.2;
 	}
 
 	&-sm {
-		@include fluid-type(0.875rem, 1.875rem);
+		@include fluid-type(0.875rem, 1.625rem);
 		line-height: 1.4;
 	}
 
 	&-base {
-		@include fluid-type(1rem, 2rem);
+		@include fluid-type(1rem, 1.75rem);
 		line-height: 1.2;
 	}
 
 	&-lg {
-		@include fluid-type(1.125rem, 2.125rem);
+		@include fluid-type(1.125rem, 1.875rem);
 		line-height: 1.2;
 	}
 
 	&-xl {
-		@include fluid-type(1.25rem, 2.25rem);
+		@include fluid-type(1.25rem, 2rem);
 		line-height: 1.2;
 	}
 
 	&-2xl {
-		@include fluid-type(1.5rem, 2.5rem);
+		@include fluid-type(1.5rem, 2.25rem);
 		line-height: 1.2;
 	}
 
 	&-3xl {
-		@include fluid-type(1.875rem, 2.875rem);
+		@include fluid-type(1.875rem, 2.625rem);
 		line-height: 1;
 	}
 
 	&-4xl {
-		@include fluid-type(2.25rem, 3.25rem);
+		@include fluid-type(2.25rem, 3rem);
 		line-height: 1;
 	}
 
 	&-5xl {
-		@include fluid-type(3rem, 4rem);
+		@include fluid-type(3rem, 3.75rem);
 		line-height: 1;
 	}
 
 	&-6xl {
-		@include fluid-type(3.75rem, 4.75rem);
+		@include fluid-type(3.75rem, 4.5rem);
 		line-height: 1;
 	}
 
 	&-7xl {
-		@include fluid-type(4.5rem, 5.5rem);
+		@include fluid-type(4.5rem, 5.25rem);
 		line-height: 1;
 	}
 
 	&-8xl {
-		@include fluid-type(6rem, 7rem);
+		@include fluid-type(6rem, 6.75rem);
 		line-height: 1;
 	}
 
 	&-9xl {
-		@include fluid-type(8rem, 9rem);
+		@include fluid-type(8rem, 8.75rem);
 		line-height: 1;
 	}
 
