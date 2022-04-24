@@ -29,6 +29,7 @@ class Fade extends Highway.Transition {
 			}, index * 100);
 		});
 
+		initSwiper();
 		done();
 	}
 
@@ -63,18 +64,22 @@ const H = new Highway.Core({
   // import Swiper JS
 import Swiper from 'swiper';
 
-const swiper = new Swiper('.swiper', {
-	slidesPerView: 1.2,
-	spaceBetween: 40,
-	breakpoints: {
-		480: {
-			slidesPerView: 1.5,
-			spaceBetween: 30,
-		},
-		1024: {
-			slidesPerView: 2.3,
-			spaceBetween: 70,
+function initSwiper() {
+	const swiper = new Swiper('.swiper', {
+		slidesPerView: 1.2,
+		spaceBetween: 40,
+		breakpoints: {
+			480: {
+				slidesPerView: 1.5,
+				spaceBetween: 30,
+			},
+			1024: {
+				slidesPerView: 2.5,
+				spaceBetween: 70,
+			}
+	
 		}
+	})
+}
 
-	}
-})
+initSwiper();
