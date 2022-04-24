@@ -46,17 +46,17 @@ h4 {
 
 .text-2xl,
 h3 {
-	@include fluid-type(1.5rem, 2rem, 1.2);
+	@include fluid-type(1.5rem, 2.25rem, 1.2);
 }
 
 .text-3xl,
 h2 {
-	@include fluid-type(1.875rem, 2.25rem, 1.2);
+	@include fluid-type(1.875rem, 2.625rem, 1.2);
 }
 
 .text-4xl,
 h1 {
-	@include fluid-type(2.25rem, 2.75rem, 1.2);
+	@include fluid-type(2.25rem, 3rem, 1.2);
 }
 
 .text-5xl {

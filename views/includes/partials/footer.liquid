@@ -1,4 +1,4 @@
-<footer id="footer" class="bg-blue pt-[8vw] pb-[5vw]">
+<footer id="footer" class="bg-blue pt-8 md:pt-[8vw] pb-0 md:pb-[5vw] px-8 sm:px-16 md:px-[6vw]">
     <div class="grid grid-cols-1 gap-20 lg:grid-cols-2">
         <div class="items-center justify-center hidden lg:flex">
             <p class="text-center">Wir freuen uns Sie in unserem <br> Saunabad begrüßen zu dürfen.
@@ -12,7 +12,7 @@
     </div>
 </footer>
 
-<section class="flex flex-col-reverse items-center gap-8 px-6 py-6 pb-12 bg-blue md:flex-row md:pb-6">
+<section class="flex flex-col-reverse items-center gap-8 bg-blue px-6 md:px-[2vw] pb-8 py-6 md:py-[2vw] md:flex-row">
     <div class="flex gap-4">
         <a href="https://www.instagram.com/saunabad_berlin/" target="_blank">
             {% include 'icons/icon-instagram' %}
@@ -28,4 +28,4 @@
         <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         {%- endfor %}
     </nav>
-</secti>
+</section>
