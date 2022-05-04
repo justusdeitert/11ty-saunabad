@@ -9,7 +9,7 @@ module.exports = {
 			sm: "480px",
 			md: "768px",
 			lg: "1024px",
-			xl: "1640px"
+			xl: "1640px",
 		},
 		colors: {
 			transparent: "transparent",
@@ -22,18 +22,23 @@ module.exports = {
 			// yellow: colors.amber,
 			blue: customColors.blue,
 			yellow: customColors.yellow,
-			sienna: customColors.sienna,
 			green: customColors.green,
 			shilo: customColors.shilo,
 			lila: customColors.lila,
 			dark: customColors.dark,
+			zest: customColors.zest,
 		},
 		fontFamily: {
 			sans: ["Mukta", "ui-sans-serif", "system-ui"],
 			serif: ["Rosario", "ui-serif", "Georgia"],
 			display: ["Limelight", "Oswald"],
 		},
-		fontSize: {}
+		// extend: {
+		// 	backgroundImage: {
+		// 		"hero-pattern": "url('/img/hero-pattern.svg')",
+		// 		"footer-texture": "url('/img/footer-texture.png')",
+		// 	},
+		// },
 	},
 	plugins: [],
 };

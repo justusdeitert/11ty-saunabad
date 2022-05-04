@@ -5,8 +5,8 @@ html {
 table {
 	@apply table-fixed mb-2 mb-[1vw];
 
-	td {
-		padding-right: 5vw;
+	td:first-child {
+		padding-right: 9vw;
 	}
 }
 
