@@ -21,12 +21,12 @@ module.exports = [
 	// },
 	{
 		title: "Privatsphäre",
-		description: "Technische Geräte mit einer Video- bzw. Fotofunktion sind in unserer Anlage verboten.",
+		description: "Um die Privatsphäre unserer Gäste zu wahren, sind in unserer Anlage Mobiltelefone oder andere technische Geräte mit einer Video- bzw. Fotofunktion verboten. ",
 		image: "./src/images/test.jpg",
 	},
 	{
 		title: "Aufguss-Öle",
-		description: "Für unsere Aufgüsse verwednen wir ausschglie0lich naturreine ätherische Öle.Wie zum Beispiel Thuja, Wacholderholz oder Petitgrain.",
+		description: "Für unsere Aufgüsse verwenden wir ausschließlich naturreine ätherische Öle. Wie zum Beispiel Thuja, Wacholderholz oder Petitgrain.",
 		image: "./src/images/test.jpg",
 	},
 ];
