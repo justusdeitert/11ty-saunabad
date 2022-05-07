@@ -21,7 +21,7 @@ module.exports = [
 	// },
 	{
 		title: "Privatsphäre",
-		description: "Um die Privatsphäre unserer Gäste zu wahren, sind in unserer Anlage Mobiltelefone oder andere technische Geräte mit einer Video- bzw. Fotofunktion verboten. ",
+		description: "In unserer Anlage sind Mobiltelefone oder andere technische Geräte mit einer Video- bzw. Fotofunktion verboten. ",
 		image: "./src/images/test.jpg",
 	},
 	{

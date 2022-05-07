@@ -3,8 +3,12 @@
         class="mx-auto md:grid md:grid-cols-5 lg:grid-cols-12 pt-36 pb-16 px-8 sm:px-16 md:px-0 md:py-[8vw] md:pt-[16vw]">
         <article class="md:col-span-3 lg:col-span-8 lg:max-w-[80%] mx-auto md:px-[4vw]">
             <div class="offset">
+                <h5>Willkommen im Saunabad Berlin. Wir bietet zwei Saunen. Eine 100 Grad-Blockbohlen-Sauna in unserem
+                    Saunagarten und eine 80 Grad Innensauna. Aufgüsse mit hochwertigen, naturreinen Ölen gibt es zur
+                    vollen Stunde.</h5>
+            </div>
+            <div class="offset">
                 <h3>Öffnungszeiten</h3>
-                <p>Aufgüsse mit hochwertigen, <br> naturreinen Ölen  zur vollen Stunde.</p>
                 <table>
                     <tbody>
                         <tr>
@@ -39,8 +43,9 @@
                 </table>
             </div>
             <div class="offset">
-
                 <h3>Saunainfos & Regeln</h3>
+                {% include 'partials/accordion' %}
+                <!-- <h3>Saunainfos & Regeln</h3>
                 <ul class="pl-5 list-disc">
                     <li>Das Saunabad bietet zwei Saunen. Eine 100 Grad-Blockbohlen-Sauna in unserem Saunagarten und eine
                         80 Grad Innensauna.</li>
@@ -59,7 +64,7 @@
                         Video-oder Fotofunktion integriert haben. Das Mitführen dieser Geräte ist in unserer Anlage
                         verboten.
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </article>
         <div class="md:h-full md:col-span-2 lg:col-span-4 md:px-[4vw] relative">

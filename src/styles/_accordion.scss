@@ -1,0 +1,13 @@
+.opening {
+	animation: opening 0.4s forwards cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordion {
+    &__collapse {
+        &.open {
+            .accordion__body {
+                display: block;
+            }
+        }
+    }
+} 

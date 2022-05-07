@@ -1,22 +1,20 @@
-// File: main.js
-// Import Highway
 import Highway from "@dogstudio/highway";
-
-// Tailwinf config file
 import Tailwind from "../../tailwind.config";
 
-// Fade
+/**
+ * Page Transition with Highway.js
+ */
 class Fade extends Highway.Transition {
 	in({ from, to, done }) {
+		// Animation
+		const main: HTMLElement = to.querySelector("main");
+		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("section, footer, header");
+
 		// Reset Scroll
 		window.scrollTo(0, 0);
 
 		// Remove Old View
 		from.remove();
-
-		// Animation
-		const main: HTMLElement = to.querySelector("main");
-		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("section, footer, header");
 
 		// Staggering animation via setTimeout
 		sections.forEach((section, index) => {
@@ -80,3 +78,28 @@ function initSwiper() {
 }
 
 initSwiper();
+
+/**
+ * Accordion
+ */
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach((accordion) => {
+	const collapses: NodeListOf<HTMLElement> = accordion.querySelectorAll(".accordion__collapse");
+
+	collapses.forEach((collapse) => {
+		const header: HTMLElement = collapse.querySelector(".accordion__header");
+
+		header.addEventListener("click", (event) => {
+			const isOpen = collapse.classList.contains('open');
+
+			collapses.forEach((collapse) => {
+				collapse.classList.remove("open");
+			});
+
+			if(!isOpen) {
+				collapse.classList.add("open");
+			}
+		});
+	});
+});
