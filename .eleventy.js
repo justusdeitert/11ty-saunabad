@@ -3,6 +3,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 const fs = require("fs");
 const isProd = process.env.NODE_ENV === "production";
+const path = require('path');
 
 // https://www.11ty.dev/docs/plugins/image/
 async function imageShortcode(src, alt, sizes, classes) {
@@ -15,6 +16,18 @@ async function imageShortcode(src, alt, sizes, classes) {
 		formats: ["webp", "jpeg"],
 		urlPath: "/images/",
 		outputDir: "./dist/images/",
+		filenameFormat: function (id, src, width, format, options) {
+			const extension = path.extname(src);
+			const name = path.basename(src, extension);
+
+			// name: filename
+			// id: hash of the original image
+			// src: original image path
+			// width: current width in px
+			// format: current file format
+			// options: set of options passed to the Image call
+			return `${name}-${width}.${format}`;
+		},
 	});
 
 	let imageAttributes = {
@@ -51,6 +64,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		// object as (src glob): (dest)
 		"./src/images/favicon.svg": "./favicon.svg",
+		"./src/images/rykestraße.jpg": "./images/rykestraße.jpg",
 	});
 
 	return {

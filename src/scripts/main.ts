@@ -91,13 +91,13 @@ accordions.forEach((accordion) => {
 		const header: HTMLElement = collapse.querySelector(".accordion__header");
 
 		header.addEventListener("click", (event) => {
-			const isOpen = collapse.classList.contains('open');
+			const isOpen = collapse.classList.contains("open");
 
 			collapses.forEach((collapse) => {
 				collapse.classList.remove("open");
 			});
 
-			if(!isOpen) {
+			if (!isOpen) {
 				collapse.classList.add("open");
 			}
 		});
