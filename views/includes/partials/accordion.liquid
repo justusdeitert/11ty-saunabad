@@ -1,10 +1,11 @@
 <div class="accordion">
     {% for faq in faqs %}
     <div class="accordion__collapse {% if forloop.first == false %}border-t{% endif %}">
-        <div class="cursor-pointer accordion__header">
+        <div class="relative flex items-center cursor-pointer accordion__header pr-7 pr:w-[2vw]">
             <h5 class="my-3 lg:my-[1vw]">
                 {{ faq.title }}
             </h5>
+            {% include 'icons/icon-chevron-down' %}
         </div>
         <div class="hidden accordion__body mb-3 lg:mb-[1vw]">
             <p>

@@ -8,6 +8,10 @@
             .accordion__body {
                 display: block;
             }
+
+            svg {
+                transform: rotate(180deg);
+            }
         }
     }
 } 
