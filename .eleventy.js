@@ -47,13 +47,19 @@ module.exports = function (eleventyConfig) {
 	// https://www.11ty.dev/docs/plugins/image/
 	eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
+	// https://www.11ty.dev/docs/copy/
+	eleventyConfig.addPassthroughCopy({
+		// object as (src glob): (dest)
+		"./src/images/favicon.svg": "./favicon.svg",
+	});
+
 	return {
 		dir: {
 			input: "views",
 			output: "dist",
 			layouts: "layouts",
 			includes: "includes",
-            data: "data"
+			data: "data",
 		},
 	};
 };

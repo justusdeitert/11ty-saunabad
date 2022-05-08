@@ -3,10 +3,16 @@ html {
 }
 
 table {
-	@apply table-fixed mb-[1vw] w-full;
+	@apply table-fixed mb-[1vw];
 
 	td:first-child {
-		padding-right: 9vw;
+		padding-right: 16vw;
+	}
+
+	@media screen(md) {
+		td:first-child {
+			padding-right: 9vw;
+		}
 	}
 }
 
