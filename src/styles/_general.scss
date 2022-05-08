@@ -3,7 +3,7 @@ html {
 }
 
 table {
-	@apply table-fixed mb-2 mb-[1vw];
+	@apply table-fixed mb-[1vw] w-full;
 
 	td:first-child {
 		padding-right: 9vw;
