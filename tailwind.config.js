@@ -1,19 +1,19 @@
 // tailwind.config.js
-const colors = require("tailwindcss/colors");
-const customColors = require("./colors.json");
+const colors = require('tailwindcss/colors');
+const customColors = require('./colors.json');
 
 module.exports = {
-	content: ["./src/**/*.{js, scss}", "./views/**/*.liquid"],
+	content: ['./src/**/*.{js, scss}', './views/**/*.liquid'],
 	theme: {
 		screens: {
-			sm: "480px",
-			md: "768px",
-			lg: "1024px",
-			xl: "1640px",
+			sm: '480px',
+			md: '768px',
+			lg: '1024px',
+			xl: '1640px',
 		},
 		colors: {
-			transparent: "transparent",
-			current: "currentColor",
+			transparent: 'transparent',
+			current: 'currentColor',
 			// black: colors.black,
 			// white: colors.white,
 			// gray: colors.gray,
@@ -29,9 +29,9 @@ module.exports = {
 			zest: customColors.zest,
 		},
 		fontFamily: {
-			sans: ["Mukta", "ui-sans-serif", "system-ui"],
-			serif: ["Rosario", "ui-serif", "Georgia"],
-			display: ["Limelight", "Oswald"],
+			sans: ['Mukta', 'ui-sans-serif', 'system-ui'],
+			serif: ['Rosario', 'ui-serif', 'Georgia'],
+			display: ['Limelight', 'Oswald'],
 		},
 		// extend: {
 		// 	backgroundImage: {

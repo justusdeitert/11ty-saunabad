@@ -1,5 +1,5 @@
-import Highway from "@dogstudio/highway";
-import Tailwind from "../../tailwind.config";
+import Highway from '@dogstudio/highway';
+import Tailwind from '../../tailwind.config';
 
 /**
  * Page Transition with Highway.js
@@ -7,8 +7,8 @@ import Tailwind from "../../tailwind.config";
 class Fade extends Highway.Transition {
 	in({ from, to, done }) {
 		// Animation
-		const main: HTMLElement = to.querySelector("main");
-		const sections: NodeListOf<HTMLElement> = main.querySelectorAll("section, footer, header");
+		const main: HTMLElement = to.querySelector('main');
+		const sections: NodeListOf<HTMLElement> = main.querySelectorAll('section, footer, header');
 
 		// Reset Scroll
 		window.scrollTo(0, 0);
@@ -18,10 +18,10 @@ class Fade extends Highway.Transition {
 
 		// Staggering animation via setTimeout
 		sections.forEach((section, index) => {
-			section.style.opacity = "0";
+			section.style.opacity = '0';
 
 			setTimeout(() => {
-				section.classList.add("coming");
+				section.classList.add('coming');
 			}, index * 100);
 		});
 
@@ -58,10 +58,10 @@ const H = new Highway.Core({
  * Import Swiper
  */
 // import Swiper JS
-import Swiper from "swiper";
+import Swiper from 'swiper';
 
 function initSwiper() {
-	const swiper = new Swiper(".swiper", {
+	const swiper = new Swiper('.swiper', {
 		slidesPerView: 1.2,
 		spaceBetween: 40,
 		breakpoints: {
@@ -82,23 +82,23 @@ initSwiper();
 /**
  * Accordion
  */
-const accordions = document.querySelectorAll(".accordion");
+const accordions = document.querySelectorAll('.accordion');
 
 accordions.forEach((accordion) => {
-	const collapses: NodeListOf<HTMLElement> = accordion.querySelectorAll(".accordion__collapse");
+	const collapses: NodeListOf<HTMLElement> = accordion.querySelectorAll('.accordion__collapse');
 
 	collapses.forEach((collapse) => {
-		const header: HTMLElement = collapse.querySelector(".accordion__header");
+		const header: HTMLElement = collapse.querySelector('.accordion__header');
 
-		header.addEventListener("click", (event) => {
-			const isOpen = collapse.classList.contains("open");
+		header.addEventListener('click', (event) => {
+			const isOpen = collapse.classList.contains('open');
 
 			collapses.forEach((collapse) => {
-				collapse.classList.remove("open");
+				collapse.classList.remove('open');
 			});
 
 			if (!isOpen) {
-				collapse.classList.add("open");
+				collapse.classList.add('open');
 			}
 		});
 	});
