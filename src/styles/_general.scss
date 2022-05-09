@@ -16,6 +16,12 @@ table {
 	}
 }
 
+ul, ol {
+
+	list-style: disc;
+	@apply pl-6 my-[1vw] text-base;
+}
+
 .transition-fade {
 	transition: 0.1s ease-in-out;
 	opacity: 1;
