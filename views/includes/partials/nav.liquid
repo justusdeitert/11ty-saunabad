@@ -1,15 +1,20 @@
 <nav class="bg-dark flex min-h-[40px] items-center justify-center px-6 md:px-[2vw] py-4 z-20 sticky top-0">
-
-	<div class="items-center hidden md:flex">
-		{% include 'icons/icon-map' %}
+	<div class="flex items-center">
+		{% include 'icons/icon-map' classnames: 'w-5 lg:w-[1.6vw] stroke-yellow' %}
 		<span class="ml-2 text-yellow">Rykestraße 10</span>
 	</div>
-
 	<div class="h-[130%] aspect-square rounded-full bg-dark translate-y-4 absolute"></div>
-
-	<div class="relative items-center hidden ml-auto md:flex">
-		{% include 'icons/icon-phone' %}
-		<a href="tel:00493044046397" class="ml-2 text-yellow">030 44046397</a>
+	<div class="ml-auto flex items-center gap-[2vw] md:gap-[1vw]">
+		<a href="https://www.instagram.com/saunabad_berlin/" target="_blank">
+			{% include 'icons/icon-instagram' classnames: 'w-5 lg:w-[1.6vw] stroke-yellow hover:underline' %}
+		</a>
+		<a href="https://www.facebook.com/Saunabad-Berlin-Prenzlauer-Berg-176322405726284/" target="_blank">
+			{% include 'icons/icon-facebook' classnames: 'w-5 lg:w-[1.6vw] stroke-yellow' %}
+		</a>
+		<a href="mailto:info@saunabad-berlin.de " class="flex items-center">
+			{% include 'icons/icon-mail' classnames: 'w-5 lg:w-[1.6vw] stroke-yellow' %}
+			<span class="hidden ml-2 text-yellow md:block">info@saunabad-berlin.de</span>
+		</a>
 	</div>
-	
 </nav>
+

@@ -64,7 +64,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		// object as (src glob): (dest)
 		'./src/images/favicon.svg': './favicon.svg',
-		'./src/images/rykestraße.jpg': './images/rykestraße.jpg',
+		'./src/images/bar.jpg': './images/bar.jpg',
+		'./src/images/saunagarten.jpg': './images/saunagarten.jpg',
 	});
 
 	return {

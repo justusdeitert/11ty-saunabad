@@ -3,7 +3,7 @@ module.exports = [
 		title: 'Saunagarten',
 		description:
 			'Nach dem Saunagang können Sie in unserem Saunagarten frische Luft atmen und barfuß auf den verschiedenen Untergründen laufen.',
-		image: './src/images/saungarten.jpg',
+		image: './src/images/saunagarten.jpg',
 	},
 	{
 		title: 'Ruheraum',
