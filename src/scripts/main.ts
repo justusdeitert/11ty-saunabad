@@ -1,5 +1,8 @@
 import Highway from '@dogstudio/highway';
 import Tailwind from '../../tailwind.config';
+import { gsap } from 'gsap';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
+
 
 /**
  * Page Transition with Highway.js
@@ -88,9 +91,9 @@ accordions.forEach((accordion) => {
 	const collapses: NodeListOf<HTMLElement> = accordion.querySelectorAll('.accordion__collapse');
 
 	collapses.forEach((collapse) => {
-		const header: HTMLElement = collapse.querySelector('.accordion__header');
+		const header: HTMLElement | null = collapse.querySelector('.accordion__header');
 
-		header.addEventListener('click', (event) => {
+		header && header.addEventListener('click', (eventa) => {
 			const isOpen = collapse.classList.contains('open');
 
 			collapses.forEach((collapse) => {
@@ -100,6 +103,26 @@ accordions.forEach((accordion) => {
 			if (!isOpen) {
 				collapse.classList.add('open');
 			}
+		});
+	});
+});
+
+// scroll to anchor with gsap
+gsap.registerPlugin(ScrollToPlugin);
+
+const anchors: NodeListOf<HTMLElement> = document.querySelectorAll('a[href*="#"]');
+anchors.forEach((anchor) => {
+	anchor.addEventListener('click', (event) => {
+
+		event.preventDefault();
+
+		anchor && gsap.to(window, {
+			duration: 0.5,
+			scrollTo: {
+				y: anchor.getAttribute('href')?.toString(),
+				offsetY: document.querySelector('nav')?.offsetHeight,
+			},
+			ease: 'power2.inOut'
 		});
 	});
 });

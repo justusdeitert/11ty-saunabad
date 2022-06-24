@@ -17,11 +17,11 @@ module.exports = [
 			'Unsere kleine Bibliothek steht mit Bildbänden, Ausstellungskatalogen, Zeitschriften und Romanen zur Verfügung.',
 		image: './src/images/test.jpg',
 	},
-	// {
-	// 	title: "Bar",
-	// 	description: "Genießen Sie ein paar leckere Getränke an unserer Bar.",
-	// 	image: "./src/images/bar.jpg",
-	// },
+	{
+		title: "Bar",
+		description: "Genießen Sie ein paar leckere Getränke an unserer Bar.",
+		image: "./src/images/bar.jpg",
+	},
 	{
 		title: 'Privatsphäre',
 		description:
